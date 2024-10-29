@@ -1,0 +1,8 @@
+[project]
+name = "Splunkbase"
+dynamic = ["version"]
+dependencies = [
+"requests",
+]
+requires-python = ">= 3.9"
+readme = "README.md"
