@@ -13,7 +13,7 @@ python3 splunkbase.py "file_containing_app_ids"
 and with the test file `app_list.txt` the ouput of
 
 ```bash
- python3 splunkbase.py app_list.txt
+python3 splunkbase.py app_list.txt
 ```
 
 is:
@@ -21,3 +21,11 @@ is:
 `https://splunkbase.splunk.com/app/4353/release/1.7.16/download, https://splunkbase.splunk.com/app/833/release/9.2.0/download`
 
 as of Oct 2024.
+
+If you are using Poetry:
+
+```bash
+poetry install
+eval $(poetry env activate)
+poetry run python splunkbase.py app_list.txt
+```
